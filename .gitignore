@@ -69,9 +69,3 @@ crashlytics-build.properties
 # OS
 .DS_Store
 Thumbs.db
-
-# Claude / AI 工具的本地上下文文件（不入仓库）
-CLAUDE.md
-.claude/
-.cursor/
-.aider*
