@@ -6,7 +6,7 @@ using Game.Player.Modules;
 namespace Game.Player
 {
     /// <summary>
-    /// 玩家动画路由（3D / Humanoid Animator）。
+    /// 玩家动画路由（通用 Animator，Humanoid / Sprite 都适用）。
     ///
     /// Animator 期望参数（默认名，可改）：
     ///   Speed       (float)   水平速度大小（XZ magnitude，用于 Idle/Walk/Run blend）
@@ -24,7 +24,7 @@ namespace Game.Player
     public class PlayerAnimator : ActorModule
     {
         [Header("Refs")]
-        [Tooltip("Humanoid Animator。不填则 GetComponentInChildren。")]
+        [Tooltip("Animator。不填则 GetComponentInChildren。")]
         public Animator animator;
 
         [Header("Animator Parameter Names")]
